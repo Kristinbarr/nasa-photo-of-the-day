@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+button {
+  font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.App {
+  text-align: center;
+  background-color: #282c34;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    .nasa-logo {
+      animation: App-logo-spin infinite 20s linear;
+      height: 12vmin;
+      padding: 2rem 1rem;
+      pointer-events: none;
+    }
+    .menu {
+      display: flex;
+      color: white;
+      padding-right: 4rem;
+      li {
+        padding: 2rem;
+        list-style: none;
+      }
+    }
+  }
+  .apod-section {
+    .apod-title {
+      display: block;
+    }
+    .apod-main {
+      display: flex;
+      justify-content: center;
+      padding: 1rem 2rem 8rem 2rem;
+
+      .apod-desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .apod-buttons {
+        button {
+          padding: 1rem;
+          margin: 1rem;
+          background-color: rgb(3,102,176);
+          font-size: 1rem;
+          color: #fff;
+        }
+      }
+      img {
+        padding-left: 2rem;
+        width: 50%;
+        height:auto;
+      }
+    }
+  }
+  .apod-grid {
+    background-color: #444444;
+    padding: 4rem;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
