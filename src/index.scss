@@ -1,6 +1,6 @@
 @import 'reset';
 @import 'global';
-@import 'Nav';
-@import 'Main';
-@import 'Grid';
+@import './TopBar/TopBar.scss';
+@import './ApodSection/ApodSection.scss';
+@import './Grid/Grid.scss';
 

@@ -1,0 +1,45 @@
+.apod-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  h1 {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+  }
+  .apod-main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem 2rem 8rem 2rem;
+    .apod-content {
+      display: flex;
+      flex-direction: column;
+      h3 {
+        padding: 2rem;
+        font-size: 1.2rem;
+      }
+      p {
+        padding: .5rem;
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .apod-buttons {
+        button {
+          padding: 1rem;
+          margin: 1rem;
+          background-color: rgb(3,102,176);
+          a {
+            color: #fff;
+            font-size: .8rem;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    img {
+      padding-left: 2rem;
+      max-width: 50%;
+    }
+  }
+}
