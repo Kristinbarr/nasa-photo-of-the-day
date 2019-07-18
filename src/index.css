@@ -13,28 +13,37 @@ button {
   color: white;
 }
 
-.App {
-  text-align: center;
-  background-color: #282c34;
-}
-.App nav {
+nav {
   display: flex;
   justify-content: space-between;
 }
-.App nav .nasa-logo {
+nav .nasa-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 12vmin;
   padding: 2rem 1rem;
   pointer-events: none;
 }
-.App nav .menu {
+nav .menu {
   display: flex;
   color: white;
   padding-right: 4rem;
 }
-.App nav .menu li {
+nav .menu li {
   padding: 2rem;
   list-style: none;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.App {
+  text-align: center;
+  background-color: #282c34;
 }
 .App .apod-section .apod-title {
   display: block;
@@ -58,21 +67,12 @@ button {
 }
 .App .apod-section .apod-main img {
   padding-left: 2rem;
-  width: 50%;
-  height: auto;
-}
-.App .apod-grid {
-  background-color: #444444;
-  padding: 4rem;
+  max-width: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.apod-grid {
+  background-color: #444444;
+  padding: 4rem;
 }
 
 /*# sourceMappingURL=index.css.map */
