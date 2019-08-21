@@ -1,5 +1,6 @@
 import React from 'react'
-import DatePicker from './DatePicker'
+import Date from './Date'
+import './TopBar.scss'
 
 const TopBar = (props) => {
   return (
@@ -15,7 +16,7 @@ const TopBar = (props) => {
         </div>
         <div className='datepicker input-container'>
           <h5>SELECT A DAY:</h5>
-          <DatePicker />
+          <Date setDate={props.setDate} />
         </div>
       </div>
     </section>

@@ -4,25 +4,29 @@ import axios from 'axios'
 import TopBar from './TopBar/TopBar'
 import ApodSection from './ApodSection/ApodSection'
 import apidata from './apidata'
-import "./index.css";
+import "./App.scss";
 
 function App() {
+  const [date, setDate] = useState('')
   const [photo, setPhoto] = useState(null)
   const [desc, setDesc] = useState('')
+  console.log('app date', date)
 
   useEffect(() => {
     setPhoto(apidata.data.url)
     setDesc(apidata.data)
+
   }, [])
 
   // useEffect(() => {
   //   axios
   //     .get(
-  //       'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2019-07-13'
+  //       'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date={date}'
   //     )
-  //     .then((response) => {
-  //       setPhoto(response.data.url)
-  //       setDesc(response.data)
+  //     .then((res) => {
+  //       console.log('res',res)
+  //       setPhoto(res.data.url)
+  //       setDesc(res.data)
   //     })
   //     .catch((error) => {
   //       console.log('something went wrong!', error)
@@ -31,7 +35,7 @@ function App() {
 
   return (
     <div className='App'>
-      <TopBar />
+      <TopBar setDate={setDate} />
       <ApodSection photo={photo} desc={desc} />
       {/* <Grid limit={20} /> */}
     </div>

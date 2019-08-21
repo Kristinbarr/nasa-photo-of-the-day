@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Buttons from './Buttons'
 
 const ApodDescription = (props) => {
-  console.log('desc', props.desc)
+  // console.log('desc', props.desc)
+  const [ viewdate, setViewdate] = useState(0)
+
   return (
     <>
       <div className='apod-content'>

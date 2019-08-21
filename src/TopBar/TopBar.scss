@@ -3,16 +3,17 @@
     justify-content: space-between;
     .nasa-logo {
       animation: App-logo-spin infinite 20s linear;
-      height: 12vmin;
-      padding: 2rem 1rem;
+      // height: 12vmin;
+      // padding: 2rem 1rem;
       pointer-events: none;
+      object-fit: contain;
     }
     .top-date {
       display: flex;
       justify-content: space-evenly;
       color: white;
       padding: 1rem 2rem;
-      width: 80%;
+      width: 70%;
       // min-width: 50%;
       // max-width: 80%;
       height: 1.6rem;
@@ -20,7 +21,7 @@
         display: flex;
         align-items: center;
         width: 24rem;
-        height: 1.6rem;
+        height: 1.8rem;
         h5 {
           width: 18rem;
         }

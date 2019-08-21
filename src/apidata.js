@@ -7,7 +7,8 @@ const res = {
     hdurl: 'https://apod.nasa.gov/apod/image/1907/AS11JK44-6633-34.jpg',
     media_type: 'image',
     service_version: 'v1',
-    title: 'The Eagle Rises',
+    title:
+      'Apollo 11 Astronaut Michael Collins Talks to Apollo 11 and Artemis 1 Launch Teams',
     url: 'https://apod.nasa.gov/apod/image/1907/AS11JK44-6633-34_1100px.jpg'
   }
 }

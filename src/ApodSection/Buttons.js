@@ -1,21 +1,23 @@
 import React from 'react'
-import { Button } from 'semantic-ui-react'
-let parsedTitle = ''
+// import { Button } from 'semantic-ui-react'
+// import styled from 'styled-components'
+import Button from './Button'
+
+// let featureTitle = 'https://www.nasa.gov/image-feature/'
 
 const Buttons = (props) => {
-  // console.log('props',props.data)
-    parsedTitle = props.data.title
-    // parsedTitle.replace(/\s+/g, '-').toLowerCase();
-    // console.log('parsed',parsedTitle)
+    let featureTitle = `https://www.nasa.gov/image-feature/${
+      props.data.title
+    }`.replace(/\s+/g, '-').toLowerCase()
 
   return (
     <>
-      <Button>
-        <a href='https://www.nasa.gov/image-feature/' >VIEW IMAGE FEATURE</a>
-      </Button>
-      <button>
-        <a href={props.data.url} download>VIEW FULL IMAGE</a>
-      </button>
+      <form action={featureTitle} target='_blank'>
+        <Button>VIEW IMAGE FEATURE</Button>
+      </form>
+      <form action={props.data.url} download target='_blank'>
+        <Button>VIEW FULL IMAGE</Button>
+      </form>
     </>
   )
 }
